@@ -1,0 +1,47 @@
+{
+  "timezone": "America/Sao_Paulo",
+  "programs": [
+    {
+      "id": "bom-dia-deus",
+      "name": "Bom Dia Deus",
+      "start": "09:00",
+      "end": "10:00",
+      "host": "Pastor Luiz Felipe"
+    },
+    {
+      "id": "encontro-com-deus",
+      "name": "Encontro com Deus",
+      "start": "12:30",
+      "end": "13:00",
+      "host": "Missionária Ingrid Laura"
+    },
+    {
+      "id": "deus-esta-aqui",
+      "name": "Deus Está Aqui",
+      "start": "15:00",
+      "end": "17:00",
+      "host": "Pastor Fernando Baptista"
+    },
+    {
+      "id": "tarde-da-bencao",
+      "name": "Tarde da Benção",
+      "start": "18:00",
+      "end": "19:00",
+      "host": "Pastor Bernardo Henrique"
+    },
+    {
+      "id": "culto-no-seu-lar",
+      "name": "Culto No Seu Lar",
+      "start": "19:00",
+      "end": "21:00",
+      "host": "Pastor Heitor Cruz"
+    },
+    {
+      "id": "noite-com-jovens",
+      "name": "Noite com Jovens",
+      "start": "22:00",
+      "end": "00:00",
+      "host": "Pastora Manuela Rodrigues"
+    }
+  ]
+}
