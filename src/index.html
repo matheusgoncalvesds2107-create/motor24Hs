@@ -1,0 +1,39 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Motor 24H</title><link rel="stylesheet" href="style.css"></head>
+<body><div class="wrap">
+<header><div><h1>WEB RÁDIO <span>Vem Comigo Deus</span></h1><p>Motor 24H • Windows</p></div><div id="clock">--:--:--</div></header>
+
+<section class="hero">
+<div id="live" class="badge off">● PARADO</div>
+<h2 id="current">Louvores que Edificam</h2>
+<p id="program">Fora da programação</p>
+<div class="buttons"><button id="start" class="green">▶ INICIAR TRANSMISSÃO</button><button id="stop">■ PARAR</button></div>
+</section>
+
+<section class="card"><h3>Pastas da rádio</h3>
+<div class="row"><input id="songs" readonly placeholder="Pasta dos louvores"><button id="chooseSongs">ESCOLHER LOUVORES</button></div>
+<div class="row"><input id="programs" readonly placeholder="Pasta dos programas"><button id="choosePrograms">ESCOLHER PROGRAMAS</button></div>
+<div class="row"><input id="jingles" readonly placeholder="Pasta das vinhetas"><button id="chooseJingles">ESCOLHER VINHETAS</button></div>
+<label class="check"><input id="spokenClock" type="checkbox" disabled> hora certa usa as 24 vinhetas oficiais do Matheus Gonçalves</label>
+<p class="hint">Cada programa deve ter: abertura.wav, palavra.wav, mensagem-de-fe.wav e encerramento.wav.</p>
+</section>
+
+<section class="card"><h3>Servidor Caster</h3>
+<div class="grid">
+<label>Host<input id="host"></label>
+<label>Porta<input id="port" type="number"></label>
+<label>Mount<input id="mount"></label>
+<label>Usuário SOURCE<input id="user"></label>
+<label class="wide">Senha SOURCE<input id="password" type="password" placeholder="fica salva só neste Windows"></label>
+<label>Bitrate<select id="bitrate"><option>96k</option><option>128k</option><option>64k</option></select></label>
+<label class="check"><input id="autoStart" type="checkbox"> iniciar automaticamente ao abrir o aplicativo</label>
+</div>
+<button id="save" class="green">SALVAR CONFIGURAÇÃO</button>
+<p class="hint">Não envie a senha SOURCE pelo chat. Digite somente aqui no aplicativo.</p>
+</section>
+
+<section class="card"><h3>Locutor oficial da Web Rádio</h3>
+<p><b>Matheus Gonçalves</b> — voz oficial da Web Rádio Vem Comigo Deus.</p>
+<p class="hint">Voz Gemini inicial: <b>Puck</b>. Agora também gera 24 vinhetas de hora certa, uma para cada hora do dia, e salva tudo no PC.</p>
+</section>
+<section class="card"><h3>Log ao vivo</h3><pre id="log">Aguardando...</pre></section>
+</div><script src="renderer.js"></script></body></html>
