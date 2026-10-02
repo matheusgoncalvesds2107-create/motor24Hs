@@ -1,0 +1,34 @@
+name: Build Motor 24H Windows EXE
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - principal
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Baixar projeto
+        uses: actions/checkout@v4
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Instalar dependencias
+        run: npm install
+
+      - name: Gerar EXE Windows
+        run: npm run dist:win
+
+      - name: Enviar EXE
+        uses: actions/upload-artifact@v4
+        with:
+          name: Motor-24H-Windows-EXE
+          path: dist/*
