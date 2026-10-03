@@ -24,10 +24,12 @@ jobs:
         run: npm install
 
       - name: Gerar EXE Windows
-        run: npm run dist:win
+        run: npm run dist:win -- --publish never
 
       - name: Enviar EXE
         uses: actions/upload-artifact@v4
         with:
           name: Motor-24H-Windows-EXE-v1.3
-          path: dist/*
+          path: |
+            dist/*.exe
+            dist/*.blockmap
