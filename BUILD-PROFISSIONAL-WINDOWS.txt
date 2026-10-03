@@ -1,0 +1,20 @@
+MOTOR 24H v1.4 — BUILD PROFISSIONAL
+
+Metadados configurados:
+- Produto: Motor 24H - Web Radio Vem Comigo Deus
+- Empresa/Publisher: Web Rádio Vem Comigo Deus
+- Versão: 1.4.0
+- App ID: com.webradiovemcomigodeus.motor24h
+- Copyright: © 2026 Web Rádio Vem Comigo Deus
+- Execução: usuário normal (asInvoker)
+- Publicação automática do electron-builder: desativada
+
+O GitHub Actions gera dois arquivos separados:
+- Motor-24H-INSTALADOR-v1.4.exe
+- Motor-24H-PORTATIL-v1.4.exe
+
+IMPORTANTE:
+Metadados profissionais não substituem assinatura digital.
+O Windows/Chrome ainda pode alertar sobre arquivo novo/sem reputação.
+Não desative o antivírus. Para reduzir de forma consistente o aviso de
+'editor desconhecido', é necessário assinar o EXE com certificado de code signing.

@@ -1,0 +1,15 @@
+HORA CERTA 24H — MATHEUS GONÇALVES
+
+As 24 frases fornecidas para cada hora do dia foram incorporadas exatamente ao projeto.
+
+FUNCIONAMENTO
+- O gerador cria hora-00.wav até hora-23.wav usando a voz Gemini configurada para Matheus Gonçalves.
+- Cada arquivo é gerado uma única vez e salvo no PC.
+- Durante a transmissão, o Gemini NÃO é chamado.
+- O Motor toca somente uma vinheta de hora certa por hora, no primeiro intervalo disponível.
+- A cada 5 louvores continua entrando a identificação da Web Rádio.
+- Nos horários dos programas, a grade dos apresentadores continua tendo prioridade.
+
+PARA GERAR
+Execute GERAR-VINHETAS-MATHEUS.bat.
+Se aparecer erro 429 de cota, pare e continue no dia seguinte. O gerador pula automaticamente os arquivos que já existem.
