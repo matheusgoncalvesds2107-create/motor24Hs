@@ -1,0 +1,19 @@
+CORREÇÃO IMPORTANTE
+
+Na versão anterior o artifactName estava assim:
+${productName}-${version}-${arch}-${ext}
+
+Isso gerava o executável com final "-exe", sem o ponto antes da extensão.
+Por isso o GitHub Actions encontrava o .blockmap, mas não encontrava um arquivo *.exe.
+
+Agora está correto:
+${productName}-${version}-${arch}.${ext}
+
+O workflow também foi alterado para:
+1. listar os arquivos gerados;
+2. localizar um .exe real;
+3. copiar para um nome simples;
+4. enviar SOMENTE o .exe no artifact.
+
+Arquivo esperado no final:
+Motor-24H-Web-Radio-Vem-Comigo-Deus-v1.4.2.exe
