@@ -1,0 +1,9 @@
+COLOQUE AQUI AS VINHETAS EM MP3 OU WAV.
+
+Nomes reconhecidos:
+- entrada-no-ar.mp3
+- identificacao.mp3
+- retorno-louvores.mp3
+
+A hora certa pode ser falada automaticamente pelo Windows quando a opção estiver ligada.
+Se quiser voz natural depois, podemos substituir por arquivos gravados/gerados.
